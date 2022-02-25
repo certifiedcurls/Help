@@ -1,0 +1,144 @@
+#include <iostream>
+#include <string>
+#include <iomanip>
+
+using namespace std;
+
+struct coffee
+{
+    enum strength { light = 1, medium = 2, dark = 3};
+    enum size { small = 0, regular = 1, large = 3, extralarge = 4};
+    float cost;
+    int amtofsugar;
+    bool cream;
+    string name;
+
+};
+
+    float cost (int name, int sugar, int cream);
+    float total;
+
+    if (size == 0)
+    {
+        total = 1.50;
+    }
+    else if (size == 1)
+    {
+        total = 2.10;
+    }
+    else if (size == 2)
+    {
+        total = 2.50;
+    }
+    else if (size == 3)
+    {
+        total = 3.00;
+    }
+    else (size == 4)
+    {
+        total = 4.25;
+    }
+
+    if (name == 1 || name == 2)
+    {
+        total += 0.25;
+    }
+      if (cream != 0)
+    {
+        total += 0.08;
+    }
+    if (sugar == 1)
+    {
+        total += 0.13;
+    }
+
+struct customer
+{
+    string fName;
+    int orderNum;
+    coffee cData;
+
+};
+
+
+int main()
+{
+   Customer cust[100];
+   char answer;
+   string quit;
+   string name;
+
+   cout << "Would you like a cup of coffee? (yes or no)";
+   cin >> answer;
+   if (answer == yes)
+   {
+       for (int i = 0; i < 100; i++)
+        cout << "Enter your name: ";
+        cin >> cust.fName;
+        do
+        {
+            cout << "What type of coffee would you like? (Columbian=0, French Roast=1, Italian Blend=2, or House=3: " << endl;
+            cin >> c.name;
+            cout << "How strong do you want it? (1-light, 2-medium, 3-dark): " << endl;
+            cin >> c.strength;
+            cout << "Enter the amount of sugar (0-none, 1, 2, 3, 4) in the coffee: " << endl;
+            cin >> c.amtofsugar;
+            cout << "Enter 1 for cream 0 for no cream: " << endl;
+            cin >> c.cream;
+
+            cout << "Your Order: " << endl;
+        if (c.name == 0)
+            cout << "Name: " << "Columbian \n";
+            else if (c.name == 1)
+                    cout << "Name: " << "French Roast \n";
+            else if (c.name == 2)
+                    cout << "Name: " << "Italian Blend \n";
+            else (c.name == 3);
+                    cout << "Name: " << "House \n";
+        if (c.amtofsugar == 0)
+            cout << "Amount of sugar: " << "None \n";
+                else
+                    cout << "Amount of sugar: " << c.amtofsugar << endl;
+        if (c.strength == 1)
+            cout << "Strength: " << "Light \n";
+                else if (c.strength == 2)
+                    cout << "Strength: " << "Medium \n";
+                else if (c.strength == 3);
+                    cout << "Strength: " << "Dark \n";
+        if (c.cream)
+                    cout << "Cream: " << "Yes \n";
+                else
+                    cout << "Cream: " << "No \n";
+        cout << "Cost: " << Cost(c.name, c.amtofsugar, c.cream);
+
+        cout << "Type 'quit' to quit or restart order"
+        cin >> quit;
+        }
+
+        while (quit != "quit");
+
+        Customer[i].orderNum = i + 1;
+        cout << "Order Number: " << Customer[i].orderNum; << endl;
+
+   } else if (answer == "no")
+        {
+            cout << "Enter name to see your order: ";
+            cin >> name;
+
+            for (int i = 0; i < 100; i++)
+            {
+                if (name == Customer[i].fName)
+                {
+                    cout << "Your order is: " << i + 1;
+                }
+            }
+
+
+        }
+    return 0;
+}
+
+
+
+
+
